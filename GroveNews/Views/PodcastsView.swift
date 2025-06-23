@@ -3,8 +3,6 @@ import SwiftUI
 struct PodcastsView: View {
     @StateObject private var articleManager = ArticleManager()
     @StateObject private var audioPlayer = AudioPlayerManager()
-    @State private var showingShareSheet = false
-    @State private var shareURL: URL?
     
     var body: some View {
         NavigationView {
@@ -25,7 +23,6 @@ struct PodcastsView: View {
                                 onPlay: { audioPlayer.play(episode: episode) },
                                 onPause: { audioPlayer.pause() },
                                 onDelete: { articleManager.removePodcast(episode) },
-                                onShare: { shareEpisode(episode) }
                             )
                         }
                     }
@@ -40,21 +37,8 @@ struct PodcastsView: View {
             }
             .navigationTitle("Podcasts")
         }
-        .sheet(isPresented: $showingShareSheet) {
-            if let url = shareURL {
-                ShareSheet(activityItems: [url])
-            }
-        }
     }
     
-    private func shareEpisode(_ episode: PodcastEpisode) {
-        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let podcastsURL = documentsURL.appendingPathComponent("Podcasts")
-        let audioURL = podcastsURL.appendingPathComponent(episode.filename)
-        
-        shareURL = audioURL
-        showingShareSheet = true
-    }
 }
 
 struct PodcastRowView: View {
@@ -64,7 +48,6 @@ struct PodcastRowView: View {
     let onPlay: () -> Void
     let onPause: () -> Void
     let onDelete: () -> Void
-    let onShare: () -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -102,11 +85,17 @@ struct PodcastRowView: View {
             Button("Delete", role: .destructive) {
                 onDelete()
             }
-            Button("Share") {
-                onShare()
+            ShareLink(item: getAudioURL()) {
+                Label("Share", systemImage: "square.and.arrow.up")
             }
             .tint(.blue)
         }
+    }
+    
+    private func getAudioURL() -> URL {
+        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let podcastsURL = documentsURL.appendingPathComponent("Podcasts")
+        return podcastsURL.appendingPathComponent(episode.filename)
     }
     
     private func formatDuration(_ duration: TimeInterval) -> String {
@@ -240,25 +229,3 @@ struct PlaybackSpeedPicker: View {
     }
 }
 
-#if os(iOS)
-struct ShareSheet: UIViewControllerRepresentable {
-    let activityItems: [Any]
-    
-    func makeUIViewController(context: Context) -> UIActivityViewController {
-        return UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
-    }
-    
-    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
-}
-#else
-struct ShareSheet: View {
-    let activityItems: [Any]
-    
-    var body: some View {
-        VStack {
-            Text("Sharing not available on macOS")
-                .padding()
-        }
-    }
-}
-#endif

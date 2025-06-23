@@ -2,7 +2,6 @@ import Foundation
 import AVFoundation
 import SwiftUI
 import MediaPlayer
-import UIKit
 
 class AudioPlayerManager: NSObject, ObservableObject {
     @Published var isPlaying = false
@@ -69,8 +68,6 @@ class AudioPlayerManager: NSObject, ObservableObject {
             return .success
         }
         
-        // Enable remote control events
-        UIApplication.shared.beginReceivingRemoteControlEvents()
     }
     
     func play(episode: PodcastEpisode) {
