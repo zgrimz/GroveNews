@@ -172,17 +172,12 @@ class SpeechifyAPI {
         exportSession.outputURL = outputURL.appendingPathExtension("m4a")
         exportSession.outputFileType = .m4a
         
-        return try await withCheckedThrowingContinuation { continuation in
-            exportSession.exportAsynchronously {
-                switch exportSession.status {
-                case .completed:
-                    continuation.resume(returning: exportSession.outputURL ?? outputURL)
-                case .failed, .cancelled:
-                    continuation.resume(throwing: SpeechifyError.audioProcessingFailed)
-                default:
-                    continuation.resume(throwing: SpeechifyError.audioProcessingFailed)
-                }
-            }
+        let finalOutputURL = outputURL.appendingPathExtension("m4a")
+        do {
+            try await exportSession.export(to: finalOutputURL, as: .m4a)
+            return finalOutputURL
+        } catch {
+            throw SpeechifyError.audioProcessingFailed
         }
     }
 }

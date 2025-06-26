@@ -7,62 +7,65 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		6B87AC172E079D5D00A5EFF0 /* PBXContainerItemProxy */ = {
+		6B4800792E0CC70500FFE703 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6B87ABFB2E079D5B00A5EFF0 /* Project object */;
+			containerPortal = 6B48005D2E0CC70400FFE703 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6B87AC022E079D5B00A5EFF0;
+			remoteGlobalIDString = 6B4800642E0CC70400FFE703;
 			remoteInfo = GroveNews;
 		};
-		6B87AC212E079D5D00A5EFF0 /* PBXContainerItemProxy */ = {
+		6B4800832E0CC70500FFE703 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6B87ABFB2E079D5B00A5EFF0 /* Project object */;
+			containerPortal = 6B48005D2E0CC70400FFE703 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6B87AC022E079D5B00A5EFF0;
+			remoteGlobalIDString = 6B4800642E0CC70400FFE703;
 			remoteInfo = GroveNews;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6B87AC032E079D5B00A5EFF0 /* GroveNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroveNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B87AC162E079D5D00A5EFF0 /* GroveNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroveNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B87AC202E079D5D00A5EFF0 /* GroveNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroveNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4800652E0CC70400FFE703 /* GroveNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroveNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4800782E0CC70500FFE703 /* GroveNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroveNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4800822E0CC70500FFE703 /* GroveNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroveNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6B266EEA2E0CC7C400F41EA9 /* Exceptions for "GroveNews" folder in "GroveNews" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6B4800642E0CC70400FFE703 /* GroveNews */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6B87AC052E079D5B00A5EFF0 /* GroveNews */ = {
+		6B4800672E0CC70400FFE703 /* GroveNews */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6B266EEA2E0CC7C400F41EA9 /* Exceptions for "GroveNews" folder in "GroveNews" target */,
+			);
 			path = GroveNews;
-			sourceTree = "<group>";
-		};
-		6B87AC192E079D5D00A5EFF0 /* GroveNewsTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GroveNewsTests;
-			sourceTree = "<group>";
-		};
-		6B87AC232E079D5D00A5EFF0 /* GroveNewsUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GroveNewsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6B87AC002E079D5B00A5EFF0 /* Frameworks */ = {
+		6B4800622E0CC70400FFE703 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B87AC132E079D5D00A5EFF0 /* Frameworks */ = {
+		6B4800752E0CC70500FFE703 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B87AC1D2E079D5D00A5EFF0 /* Frameworks */ = {
+		6B48007F2E0CC70500FFE703 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,22 +75,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6B87ABFA2E079D5B00A5EFF0 = {
+		6B48005C2E0CC70400FFE703 = {
 			isa = PBXGroup;
 			children = (
-				6B87AC052E079D5B00A5EFF0 /* GroveNews */,
-				6B87AC192E079D5D00A5EFF0 /* GroveNewsTests */,
-				6B87AC232E079D5D00A5EFF0 /* GroveNewsUITests */,
-				6B87AC042E079D5B00A5EFF0 /* Products */,
+				6B4800672E0CC70400FFE703 /* GroveNews */,
+				6B4800662E0CC70400FFE703 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6B87AC042E079D5B00A5EFF0 /* Products */ = {
+		6B4800662E0CC70400FFE703 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6B87AC032E079D5B00A5EFF0 /* GroveNews.app */,
-				6B87AC162E079D5D00A5EFF0 /* GroveNewsTests.xctest */,
-				6B87AC202E079D5D00A5EFF0 /* GroveNewsUITests.xctest */,
+				6B4800652E0CC70400FFE703 /* GroveNews.app */,
+				6B4800782E0CC70500FFE703 /* GroveNewsTests.xctest */,
+				6B4800822E0CC70500FFE703 /* GroveNewsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,134 +96,128 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6B87AC022E079D5B00A5EFF0 /* GroveNews */ = {
+		6B4800642E0CC70400FFE703 /* GroveNews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B87AC2A2E079D5D00A5EFF0 /* Build configuration list for PBXNativeTarget "GroveNews" */;
+			buildConfigurationList = 6B48008C2E0CC70500FFE703 /* Build configuration list for PBXNativeTarget "GroveNews" */;
 			buildPhases = (
-				6B87ABFF2E079D5B00A5EFF0 /* Sources */,
-				6B87AC002E079D5B00A5EFF0 /* Frameworks */,
-				6B87AC012E079D5B00A5EFF0 /* Resources */,
+				6B4800612E0CC70400FFE703 /* Sources */,
+				6B4800622E0CC70400FFE703 /* Frameworks */,
+				6B4800632E0CC70400FFE703 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				6B87AC052E079D5B00A5EFF0 /* GroveNews */,
+				6B4800672E0CC70400FFE703 /* GroveNews */,
 			);
 			name = GroveNews;
 			packageProductDependencies = (
 			);
 			productName = GroveNews;
-			productReference = 6B87AC032E079D5B00A5EFF0 /* GroveNews.app */;
+			productReference = 6B4800652E0CC70400FFE703 /* GroveNews.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6B87AC152E079D5D00A5EFF0 /* GroveNewsTests */ = {
+		6B4800772E0CC70500FFE703 /* GroveNewsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B87AC2D2E079D5D00A5EFF0 /* Build configuration list for PBXNativeTarget "GroveNewsTests" */;
+			buildConfigurationList = 6B48008F2E0CC70500FFE703 /* Build configuration list for PBXNativeTarget "GroveNewsTests" */;
 			buildPhases = (
-				6B87AC122E079D5D00A5EFF0 /* Sources */,
-				6B87AC132E079D5D00A5EFF0 /* Frameworks */,
-				6B87AC142E079D5D00A5EFF0 /* Resources */,
+				6B4800742E0CC70500FFE703 /* Sources */,
+				6B4800752E0CC70500FFE703 /* Frameworks */,
+				6B4800762E0CC70500FFE703 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6B87AC182E079D5D00A5EFF0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6B87AC192E079D5D00A5EFF0 /* GroveNewsTests */,
+				6B48007A2E0CC70500FFE703 /* PBXTargetDependency */,
 			);
 			name = GroveNewsTests;
 			packageProductDependencies = (
 			);
 			productName = GroveNewsTests;
-			productReference = 6B87AC162E079D5D00A5EFF0 /* GroveNewsTests.xctest */;
+			productReference = 6B4800782E0CC70500FFE703 /* GroveNewsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6B87AC1F2E079D5D00A5EFF0 /* GroveNewsUITests */ = {
+		6B4800812E0CC70500FFE703 /* GroveNewsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B87AC302E079D5D00A5EFF0 /* Build configuration list for PBXNativeTarget "GroveNewsUITests" */;
+			buildConfigurationList = 6B4800922E0CC70500FFE703 /* Build configuration list for PBXNativeTarget "GroveNewsUITests" */;
 			buildPhases = (
-				6B87AC1C2E079D5D00A5EFF0 /* Sources */,
-				6B87AC1D2E079D5D00A5EFF0 /* Frameworks */,
-				6B87AC1E2E079D5D00A5EFF0 /* Resources */,
+				6B48007E2E0CC70500FFE703 /* Sources */,
+				6B48007F2E0CC70500FFE703 /* Frameworks */,
+				6B4800802E0CC70500FFE703 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6B87AC222E079D5D00A5EFF0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6B87AC232E079D5D00A5EFF0 /* GroveNewsUITests */,
+				6B4800842E0CC70500FFE703 /* PBXTargetDependency */,
 			);
 			name = GroveNewsUITests;
 			packageProductDependencies = (
 			);
 			productName = GroveNewsUITests;
-			productReference = 6B87AC202E079D5D00A5EFF0 /* GroveNewsUITests.xctest */;
+			productReference = 6B4800822E0CC70500FFE703 /* GroveNewsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6B87ABFB2E079D5B00A5EFF0 /* Project object */ = {
+		6B48005D2E0CC70400FFE703 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					6B87AC022E079D5B00A5EFF0 = {
+					6B4800642E0CC70400FFE703 = {
 						CreatedOnToolsVersion = 16.4;
 					};
-					6B87AC152E079D5D00A5EFF0 = {
+					6B4800772E0CC70500FFE703 = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 6B87AC022E079D5B00A5EFF0;
+						TestTargetID = 6B4800642E0CC70400FFE703;
 					};
-					6B87AC1F2E079D5D00A5EFF0 = {
+					6B4800812E0CC70500FFE703 = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 6B87AC022E079D5B00A5EFF0;
+						TestTargetID = 6B4800642E0CC70400FFE703;
 					};
 				};
 			};
-			buildConfigurationList = 6B87ABFE2E079D5B00A5EFF0 /* Build configuration list for PBXProject "GroveNews" */;
+			buildConfigurationList = 6B4800602E0CC70400FFE703 /* Build configuration list for PBXProject "GroveNews" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 6B87ABFA2E079D5B00A5EFF0;
+			mainGroup = 6B48005C2E0CC70400FFE703;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 6B87AC042E079D5B00A5EFF0 /* Products */;
+			productRefGroup = 6B4800662E0CC70400FFE703 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6B87AC022E079D5B00A5EFF0 /* GroveNews */,
-				6B87AC152E079D5D00A5EFF0 /* GroveNewsTests */,
-				6B87AC1F2E079D5D00A5EFF0 /* GroveNewsUITests */,
+				6B4800642E0CC70400FFE703 /* GroveNews */,
+				6B4800772E0CC70500FFE703 /* GroveNewsTests */,
+				6B4800812E0CC70500FFE703 /* GroveNewsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6B87AC012E079D5B00A5EFF0 /* Resources */ = {
+		6B4800632E0CC70400FFE703 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B87AC142E079D5D00A5EFF0 /* Resources */ = {
+		6B4800762E0CC70500FFE703 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B87AC1E2E079D5D00A5EFF0 /* Resources */ = {
+		6B4800802E0CC70500FFE703 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +227,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6B87ABFF2E079D5B00A5EFF0 /* Sources */ = {
+		6B4800612E0CC70400FFE703 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B87AC122E079D5D00A5EFF0 /* Sources */ = {
+		6B4800742E0CC70500FFE703 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B87AC1C2E079D5D00A5EFF0 /* Sources */ = {
+		6B48007E2E0CC70500FFE703 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,20 +251,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6B87AC182E079D5D00A5EFF0 /* PBXTargetDependency */ = {
+		6B48007A2E0CC70500FFE703 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6B87AC022E079D5B00A5EFF0 /* GroveNews */;
-			targetProxy = 6B87AC172E079D5D00A5EFF0 /* PBXContainerItemProxy */;
+			target = 6B4800642E0CC70400FFE703 /* GroveNews */;
+			targetProxy = 6B4800792E0CC70500FFE703 /* PBXContainerItemProxy */;
 		};
-		6B87AC222E079D5D00A5EFF0 /* PBXTargetDependency */ = {
+		6B4800842E0CC70500FFE703 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6B87AC022E079D5B00A5EFF0 /* GroveNews */;
-			targetProxy = 6B87AC212E079D5D00A5EFF0 /* PBXContainerItemProxy */;
+			target = 6B4800642E0CC70400FFE703 /* GroveNews */;
+			targetProxy = 6B4800832E0CC70500FFE703 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		6B87AC282E079D5D00A5EFF0 /* Debug */ = {
+		6B48008A2E0CC70500FFE703 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -331,7 +326,7 @@
 			};
 			name = Debug;
 		};
-		6B87AC292E079D5D00A5EFF0 /* Release */ = {
+		6B48008B2E0CC70500FFE703 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -385,18 +380,20 @@
 			};
 			name = Release;
 		};
-		6B87AC2B2E079D5D00A5EFF0 /* Debug */ = {
+		6B48008D2E0CC70500FFE703 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GroveNews/GroveNews.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0.7;
 				DEVELOPMENT_TEAM = MWW68W9GDA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GroveNews;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -407,35 +404,38 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = grovehouse.xyz.GroveNews;
+				MARKETING_VERSION = 0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.grovehouse.grovenews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Debug;
 		};
-		6B87AC2C2E079D5D00A5EFF0 /* Release */ = {
+		6B48008E2E0CC70500FFE703 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GroveNews/GroveNews.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0.7;
 				DEVELOPMENT_TEAM = MWW68W9GDA;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GroveNews;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -446,24 +446,25 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = grovehouse.xyz.GroveNews;
+				MARKETING_VERSION = 0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.grovehouse.grovenews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Release;
 		};
-		6B87AC2E2E079D5D00A5EFF0 /* Debug */ = {
+		6B4800902E0CC70500FFE703 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,7 +487,7 @@
 			};
 			name = Debug;
 		};
-		6B87AC2F2E079D5D00A5EFF0 /* Release */ = {
+		6B4800912E0CC70500FFE703 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,7 +510,7 @@
 			};
 			name = Release;
 		};
-		6B87AC312E079D5D00A5EFF0 /* Debug */ = {
+		6B4800932E0CC70500FFE703 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -531,7 +532,7 @@
 			};
 			name = Debug;
 		};
-		6B87AC322E079D5D00A5EFF0 /* Release */ = {
+		6B4800942E0CC70500FFE703 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -556,43 +557,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6B87ABFE2E079D5B00A5EFF0 /* Build configuration list for PBXProject "GroveNews" */ = {
+		6B4800602E0CC70400FFE703 /* Build configuration list for PBXProject "GroveNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6B87AC282E079D5D00A5EFF0 /* Debug */,
-				6B87AC292E079D5D00A5EFF0 /* Release */,
+				6B48008A2E0CC70500FFE703 /* Debug */,
+				6B48008B2E0CC70500FFE703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B87AC2A2E079D5D00A5EFF0 /* Build configuration list for PBXNativeTarget "GroveNews" */ = {
+		6B48008C2E0CC70500FFE703 /* Build configuration list for PBXNativeTarget "GroveNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6B87AC2B2E079D5D00A5EFF0 /* Debug */,
-				6B87AC2C2E079D5D00A5EFF0 /* Release */,
+				6B48008D2E0CC70500FFE703 /* Debug */,
+				6B48008E2E0CC70500FFE703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B87AC2D2E079D5D00A5EFF0 /* Build configuration list for PBXNativeTarget "GroveNewsTests" */ = {
+		6B48008F2E0CC70500FFE703 /* Build configuration list for PBXNativeTarget "GroveNewsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6B87AC2E2E079D5D00A5EFF0 /* Debug */,
-				6B87AC2F2E079D5D00A5EFF0 /* Release */,
+				6B4800902E0CC70500FFE703 /* Debug */,
+				6B4800912E0CC70500FFE703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B87AC302E079D5D00A5EFF0 /* Build configuration list for PBXNativeTarget "GroveNewsUITests" */ = {
+		6B4800922E0CC70500FFE703 /* Build configuration list for PBXNativeTarget "GroveNewsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6B87AC312E079D5D00A5EFF0 /* Debug */,
-				6B87AC322E079D5D00A5EFF0 /* Release */,
+				6B4800932E0CC70500FFE703 /* Debug */,
+				6B4800942E0CC70500FFE703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6B87ABFB2E079D5B00A5EFF0 /* Project object */;
+	rootObject = 6B48005D2E0CC70400FFE703 /* Project object */;
 }

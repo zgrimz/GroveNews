@@ -101,17 +101,11 @@ class PodcastGenerator {
         exportSession.outputURL = outputURL
         exportSession.outputFileType = .m4a
         
-        return try await withCheckedThrowingContinuation { continuation in
-            exportSession.exportAsynchronously {
-                switch exportSession.status {
-                case .completed:
-                    continuation.resume(returning: outputURL)
-                case .failed, .cancelled:
-                    continuation.resume(throwing: PodcastGenerationError.audioProcessingFailed)
-                default:
-                    continuation.resume(throwing: PodcastGenerationError.audioProcessingFailed)
-                }
-            }
+        do {
+            try await exportSession.export(to: outputURL, as: .m4a)
+            return outputURL
+        } catch {
+            throw PodcastGenerationError.audioProcessingFailed
         }
     }
     

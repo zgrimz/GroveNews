@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PodcastsView: View {
-    @StateObject private var articleManager = ArticleManager()
+    @EnvironmentObject private var articleManager: ArticleManager
     @StateObject private var audioPlayer = AudioPlayerManager()
     
     var body: some View {

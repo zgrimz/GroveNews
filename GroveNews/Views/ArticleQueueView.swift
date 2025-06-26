@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ArticleQueueView: View {
-    @StateObject private var articleManager = ArticleManager()
+    @EnvironmentObject private var articleManager: ArticleManager
     @State private var showingAddArticle = false
     @State private var isGenerating = false
     @State private var showingGenerateConfirmation = false
