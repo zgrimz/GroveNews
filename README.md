@@ -1,1 +1,1 @@
-An iOS app that transforms news articles into AI generated episodes
+An iOS app that transforms news articles into AI generated episodes. It uses Claude AI to create scripts from user provided articles, then converts them to speech using Speechify's TTS API, producing a complete MP3 podcast file, all within the app. 
